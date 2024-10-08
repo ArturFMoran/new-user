@@ -14,6 +14,7 @@ import {UserFormComponent} from "./user-form/user-form.component";
   ],
   standalone: true
 })
+
 export class AppComponent {
   users: { firstName: string; lastName: string; gender: string; creationDate: Date }[] = [];
   logMessage = '';
