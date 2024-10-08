@@ -1,0 +1,21 @@
+.form-container {
+  display: flex; /* Активируем Flexbox для формы */
+  flex-direction: column; /* Размещаем элементы в столбик */
+  gap: 10px; /* Отступы между элементами */
+  align-items: start;
+}
+
+.form-group {
+  display: flex; /* Активируем Flexbox для группы элементов */
+  flex-direction: column; /* Размещаем элементы в столбик */
+}
+
+.gender-group {
+  display: flex; /* Размещаем радиокнопки в строку */
+  gap: 10px; /* Отступы между радиокнопками */
+}
+
+.signUpButton {
+  display: flex;
+  align-items: flex-end;
+}

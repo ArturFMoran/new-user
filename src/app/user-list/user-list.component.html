@@ -1,0 +1,19 @@
+<h2>Список пользователей</h2>
+<table>
+  <thead>
+  <tr>
+    <th>Имя</th>
+    <th>Фамилия</th>
+    <th>Пол</th>
+    <th>Дата создания</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <td>{{ user.firstName }}</td>
+    <td>{{ user.lastName }}</td>
+    <td>{{ user.gender }}</td>
+    <td>{{ user.creationDate | date:'short' }}</td>
+  </tr>
+  </tbody>
+</table>

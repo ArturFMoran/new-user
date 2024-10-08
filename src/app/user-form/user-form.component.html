@@ -1,0 +1,27 @@
+<div>
+  <h2>Новый пользователь</h2>
+  <form (ngSubmit)="onSubmit()" #userForm="ngForm" class="form-container">
+    <div class="form-group">
+      <label for="firstName">Имя:</label>
+      <input id="firstName" name="firstName" [(ngModel)]="firstName" required />
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Фамилия:</label>
+      <input id="lastName" name="lastName" [(ngModel)]="lastName" required />
+    </div>
+
+    <div class="form-group">
+      <label>Пол:</label>
+      <div class="gender-group">
+        <input type="radio" id="male" name="gender" value="М" [(ngModel)]="gender" /> М
+        <input type="radio" id="female" name="gender" value="Ж" [(ngModel)]="gender" /> Ж
+      </div>
+    </div>
+
+    <div class="signUpButton">
+      <button type="submit" [disabled]="!userForm.form.valid">Создать</button>
+    </div>
+  </form>
+</div>
+
