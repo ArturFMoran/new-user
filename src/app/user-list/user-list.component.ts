@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
-import {DatePipe, NgForOf} from "@angular/common";
+import { DatePipe, NgForOf} from "@angular/common";
+import {UserForm} from "../interfaces";
 
 @Component({
   selector: 'app-user-list',
@@ -7,11 +8,11 @@ import {DatePipe, NgForOf} from "@angular/common";
   styleUrls: ['./user-list.component.scss'],
   imports: [
     NgForOf,
-    DatePipe
+    DatePipe,
   ],
   standalone: true
 })
 
 export class UserListComponent {
-  @Input() users: { firstName: string; lastName: string; gender: string; creationDate: Date }[] = [];
+  @Input() users: UserForm[] = [];
 }

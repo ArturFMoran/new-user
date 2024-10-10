@@ -1,6 +1,8 @@
-<div class= 'container'>
-  <app-user-form (userCreated)="addUser($event)"></app-user-form>
+<div class="container">
+  <div class="top-section">
+    <app-user-form (userCreated)="addUser($event)"></app-user-form>
+    <app-user-list [users]="users"></app-user-list>
+  </div>
   <app-user-log [logMessage]="logMessage"></app-user-log>
-  <app-user-list [users]="users"></app-user-list>
 </div>
 
